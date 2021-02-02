@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>首页</title>
+    </head>
+    <body>
+        {% if request.session.userName %}
+            <h1>{{ request.session.userName }} 欢迎回来！</h1>
+            <p>
+                <a href="/logout/">退出</a>
+            </p>
+        {% endif %}
+    </body>
+</html>
